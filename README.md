@@ -1,4 +1,4 @@
-# PowerAutomateCheatSheet
+# Power Automate Cheat Sheet
 A cheat sheet for Microsoft Power Automate ( last known as Microsoft Flow) or Microsoft Logic Apps
 
 ## Get value
