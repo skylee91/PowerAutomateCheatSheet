@@ -1,9 +1,9 @@
 # Power Automate Cheat Sheet
 A cheat sheet for Microsoft Power Automate (last known as Microsoft Flow) or Microsoft Logic Apps
 
-## Get value
+## Get Value
 
-### From variable
+### From Variable
 e.g. you have intialized a variable of `object` type
 ```
 {
@@ -17,7 +17,7 @@ OR
 `variables('varValidationRule')?['Photo/Format']`
 
 
-### From trigger
+### From Trigger
 e.g. you have a trigger, 
 When a new response is submitted
 
