@@ -1,6 +1,19 @@
 # Power Automate Cheat Sheet
 A cheat sheet for Microsoft Power Automate (last known as Microsoft Flow) or Microsoft Logic Apps
 
+- [Power Automate Cheat Sheet](#power-automate-cheat-sheet)
+  * [Get Value](#get-value)
+    + [From Variable](#from-variable)
+    + [From Trigger](#from-trigger)
+    + [From Output](#from-output)
+  * [Connectors](#connectors)
+    + [SharePoint REST API](#sharepoint-rest-api)
+      - [GetFolderByServerRelativeUrl](#getfolderbyserverrelativeurl)
+      - [GetFileByUrl + Properties](#getfilebyurl--properties)
+      - [GetFileByServerRelativePath + Properties](#getfilebyserverrelativepath--properties)
+  * [References](#references)
+
+
 ## Get Value
 
 ### From Variable
@@ -41,9 +54,21 @@ OR you can use `triggerBody()` a shorthand for
 `if(equals(outputs('Compose')?['ApplyFor'], 'Myself'), '', outputs('Compose')?['ApplicantEmail'])`
 
 
+## Connectors
 
+### SharePoint REST API
 
+#### GetFolderByServerRelativeUrl
 
+`https://tenant.sharepoint.com/sites/SiteName/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Apps/Microsoft%20Forms/filename.jpg')`
+
+#### GetFileByUrl + Properties
+
+`https://tenant.sharepoint.com/sites/SiteName/_api/Web/GetFileByUrl(@url)/Properties?@url='https://tenant.sharepoint.com/sites/SiteName/Shared%20Documents/Apps/Microsoft%20Forms/filename.jpg'`
+
+#### GetFileByServerRelativePath + Properties
+
+`https://tenant.sharepoint.com/sites/SiteName/_api/Web/GetFileByServerRelativePath(decodedurl='/sites/SiteName/Shared%20Documents/Apps/Microsoft%20Forms/filename.jpg')/Properties`
 
 
 ## References
