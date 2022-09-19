@@ -14,6 +14,8 @@ A cheat sheet for Microsoft Power Automate (last known as Microsoft Flow) or Mic
   * [References](#references)
 
 
+[<small><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></small>]
+
 ## Get Value
 
 ### From Variable
