@@ -60,11 +60,16 @@ OR you can use `triggerBody()` a shorthand for
 
 ### SharePoint REST API
 
+- [Web Method](https://learn.microsoft.com/en-us/previous-versions/office/sharepoint-server/mt684226(v=office.15))
+- [API v1 - more specific API here](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-rest-endpoints)
+- [API v2 - less specific API here](https://learn.microsoft.com/en-us/sharepoint/dev/apis/sharepoint-rest-graph)
+
+
 #### GetFolderByServerRelativeUrl
 
 `https://tenant.sharepoint.com/sites/SiteName/_api/web/GetFolderByServerRelativeUrl('Shared%20Documents/Apps/Microsoft%20Forms/filename.jpg')`
 
-#### GetFileByUrl + Properties
+#### GetFileByUrl + Properties 
 
 `https://tenant.sharepoint.com/sites/SiteName/_api/Web/GetFileByUrl(@url)/Properties?@url='https://tenant.sharepoint.com/sites/SiteName/Shared%20Documents/Apps/Microsoft%20Forms/filename.jpg'`
 
